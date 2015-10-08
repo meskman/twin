@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+
+
+	$(".section_header").animated("fadeInUp", "fadeOutDown");
+
+
 	function heightDetect() {
 		$(".main_head").css("height", $(window).height());
 	};
@@ -29,5 +34,14 @@ $(document).ready(function() {
 			$(".top_mnu li a").addClass("fadeInUp animated");
 		};
 	});
-	
+
+
+
+
 });
+$(window).load(function() {
+
+	$(".loader_inner").fadeOut();
+	$(".loader").delay(400).fadeOut("slow");
+
+}); 
